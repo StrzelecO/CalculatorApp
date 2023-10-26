@@ -75,7 +75,11 @@ const calculate = () => {
 		display.textContent = display.textContent.replace(/x/g, '*');
 		display.textContent = math.evaluate(display.textContent);
 
-		if (display.textContent == 'Infinity' || display.textContent == 'NaN') {
+		if (
+			display.textContent == 'Infinity' ||
+			display.textContent == 'NaN' ||
+			display.textContent == '-Infinity'
+		) {
 			errorMsg.style.visibility = 'visible';
 			display.textContent = unchenagedDisplay;
 			return;
