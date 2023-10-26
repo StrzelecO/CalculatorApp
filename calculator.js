@@ -71,13 +71,13 @@ const calculate = () => {
 		display.textContent.slice(-1) != '=' &&
 		display.textContent.slice(-1) != 'x'
 	) {
+		let unchenagedDisplay = display.textContent;
 		display.textContent = display.textContent.replace(/x/g, '*');
-		let beforeEval = display.textContent;
 		display.textContent = math.evaluate(display.textContent);
 
-		if (display.textContent == 'Infinity') {
+		if (display.textContent == 'Infinity' || display.textContent == 'NaN') {
 			errorMsg.style.visibility = 'visible';
-			display.textContent = beforeEval;
+			display.textContent = unchenagedDisplay;
 			return;
 		}
 
