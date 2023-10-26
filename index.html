@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0a5509da71.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./calculator.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.7.0/math.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="screen-panel">
+            <p class="error-info">error - do not divide by 0</p>
+            <div class="display">0 =</div>
+        </div>
+        <div class="buttons-panel">
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">/</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">x</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator">-</button>
+            <button class="number">.</button>
+            <button class="number">0</button>
+            <button class="undo"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="operator">+</button>
+            <button class="reset">reset</button>
+            <button class="equal">=</button>
+        </div>
+    </div>
+
+    <script src="./calculator.js"></script>
+</body>
+
+</html>
