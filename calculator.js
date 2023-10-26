@@ -100,6 +100,7 @@ const undo = () => {
 };
 
 const resetAll = () => {
+	isPreviousOperator = false;
 	display.textContent = '0 =';
 	errorMsg.style.visibility = 'hidden';
 };
